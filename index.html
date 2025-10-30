@@ -4,49 +4,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Jurni — Coursera Demo</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header id="top">
-    <h1>Jurni — Coursera Demo</h1>
+  <!-- Skip to Main Content -->
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <header>
+    <div class="logo-title">
+      <img src="img/logo.png" alt="Jurni Logo" class="logo">
+      <h1>Jurni — Coursera Demo</h1>
+    </div>
     <nav>
       <ul>
-        <li><a href="#nha-trang">Nha Trang Tour</a></li>
-        <li><a href="#sapa">Sa Pa Tour</a></li>
-        <li><a href="#ha-long">Ha Long Tour</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="nha-trang.html">Nha Trang</a></li>
+        <li><a href="sapa.html">Sa Pa</a></li>
+        <li><a href="ha-long.html">Ha Long</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <h2>Tour List</h2>
-
-    <section id="nha-trang">
-      <h3>Nha Trang Tour</h3>
-      <img src="img/NhaTrang.jpg" alt="Nha Trang beach, 3-day tour">
-      <p>A 3-day tour exploring the coastal city of Nha Trang, featuring highlights such as Vinpearl, Hon Mun Island, and Dam Market.</p>
-      <a href="#top" class="back">Back to top</a>
-    </section>
-
-    <section id="sapa">
-      <h3>Sa Pa Tour</h3>
-      <img src="img/Sapa.jpg" alt="Sa Pa landscape, trekking tour">
-      <p>A trekking tour to discover the beauty of the Northwest mountains, visit Cat Cat Village, and conquer Fansipan Peak.</p>
-      <a href="#top" class="back">Back to top</a>
-    </section>
-
-    <section id="ha-long">
-      <h3>Ha Long Tour</h3>
-      <img src="img/HaLong.jpg" alt="Ha Long Bay cruise tour">
-      <p>A cruise tour exploring Ha Long Bay – a UNESCO World Heritage site – visiting Sung Sot Cave and Titop Island.</p>
-      <a href="#top" class="back">Back to top</a>
-    </section>
-
-    <p class="ref">Reference: 
-      <a href="https://github.com/ledaithanhlong/coursera.git" target="_blank" rel="noopener">LDTL Coursera Repository</a>
+  <main id="main-content">
+    <p class="intro">
+      Explore Vietnam’s most beautiful destinations with comfort and style.
     </p>
+
+    <section class="grid">
+      <div class="tour-card">
+        <img src="img/NhaTrang.jpg" alt="Nha Trang beach, 3-day tour">
+        <h2>Nha Trang Tour</h2>
+        <p>Relax on pristine beaches and explore the tropical islands of Nha Trang.</p>
+        <a href="nha-trang.html" class="btn">View Tour</a>
+      </div>
+
+      <div class="tour-card">
+        <img src="img/Sapa.jpg" alt="Sa Pa landscape, trekking tour">
+        <h2>Sa Pa Tour</h2>
+        <p>Trek through misty mountains and meet ethnic tribes in Northern Vietnam.</p>
+        <a href="sapa.html" class="btn">View Tour</a>
+      </div>
+
+      <div class="tour-card">
+        <img src="img/HaLong.jpg" alt="Ha Long Bay cruise tour">
+        <h2>Ha Long Tour</h2>
+        <p>Enjoy a cruise in Ha Long Bay – visit Sung Sot Cave and Titop Island.</p>
+        <a href="ha-long.html" class="btn">View Tour</a>
+      </div>
+    </section>
   </main>
 
-  <footer>Contact: lucaslee050304@gmail.com</footer>
+  <footer>
+    <p>Contact: lucaslee050304@gmail.com</p>
+  </footer>
 </body>
 </html>

@@ -3,34 +3,55 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jurni — Interactive Photo Gallery</title>
+  <title>Jurni — Review</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <header>
     <div class="logo-title">
-      <img src="img/logo.png" alt="Jurni logo">
-      <h1>Jurni — Interactive Photo Gallery</h1>
+      <img src="img/logo.png" alt="Jurni Logo">
+      <h1>Jurni — Tour Reviews</h1>
     </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="review.html" class="active">Reviews</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <div id="image">
-      Hover over an image below to display here.
+  <main id="main">
+    <div class="preview-box" id="previewBox">
+      Hover over an image to preview!
     </div>
 
-    <div class="flex">
-      <img src="img/NhaTrang.jpg" alt="Nha Trang beach" 
-           onmouseover="upDate(this)" onmouseout="undo()">
-      <img src="img/Sapa.jpg" alt="Sa Pa mountain landscape" 
-           onmouseover="upDate(this)" onmouseout="undo()">
-      <img src="img/HaLong.jpg" alt="Ha Long Bay" 
-           onmouseover="upDate(this)" onmouseout="undo()">
+    <div id="gallery">
+        <img src="img/NhaTrang1.jpg" alt="Nha Trang Beach">
+        <img src="img/NhaTrang2.jpg" alt="Nha Trang Resort">
+        <img src="img/NhaTrang3.jpg" alt="Nha Trang Beach">
+        <img src="img/NhaTrang4.jpg" alt="Nha Trang Resort">
+        <img src="img/NhaTrang5.jpg" alt="Nha Trang Beach">
+        <img src="img/NhaTrang.jpg" alt="Nha Trang Resort">
+        <img src="img/Sapa1.jpg" alt="Sa Pa Valley">
+        <img src="img/Sapa2.jpg" alt="Fansipan Peak">
+        <img src="img/Sapa3.jpg" alt="Sa Pa Valley">
+        <img src="img/Sapa4.jpg" alt="Fansipan Peak">
+        <img src="img/Sapa5.jpg" alt="Sa Pa Valley">
+        <img src="img/Sapa.jpg" alt="Fansipan Peak">
+        <img src="img/HaLong1.jpg" alt="Ha Long Bay">
+        <img src="img/HaLong2.jpg" alt="Ha Long Cruise">
+        <img src="img/HaLong3.jpg" alt="Ha Long Bay">
+        <img src="img/HaLong4.jpg" alt="Ha Long Cruise">
+        <img src="img/HaLong5.jpg" alt="Ha Long Bay">
+        <img src="img/HaLong.jpg" alt="Ha Long Cruise">
     </div>
   </main>
 
   <footer>
-    Contact: lucaslee050304@gmail.com
+    © 2025 Jurni. All rights reserved.
   </footer>
 
   <script src="js/script.js"></script>

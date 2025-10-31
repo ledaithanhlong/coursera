@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Jurni — Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="img/logo.png" alt="Jurni logo">
+      <h1>Jurni — Interactive Photo Gallery</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="image">
+      Hover over an image below to display here.
+    </div>
+
+    <div class="flex">
+      <img src="img/NhaTrang.jpg" alt="Nha Trang beach" 
+           onmouseover="upDate(this)" onmouseout="undo()">
+      <img src="img/Sapa.jpg" alt="Sa Pa mountain landscape" 
+           onmouseover="upDate(this)" onmouseout="undo()">
+      <img src="img/HaLong.jpg" alt="Ha Long Bay" 
+           onmouseover="upDate(this)" onmouseout="undo()">
+    </div>
+  </main>
+
+  <footer>
+    Contact: lucaslee050304@gmail.com
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

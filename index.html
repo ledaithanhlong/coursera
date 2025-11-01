@@ -1,59 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Jurni — Coursera Demo</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-  <!-- Skip to Main Content -->
-  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+  <a href="#main" class="skip-link">Skip to main content</a>
 
   <header>
     <div class="logo-title">
-      <img src="img/logo.png" alt="Jurni logo">
+      <img src="img/logo.png" alt="Jurni logo" />
       <h1>Jurni — Coursera Demo</h1>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="nha-trang.html">Nha Trang Tour</a></li>
-        <li><a href="sapa.html">Sa Pa Tour</a></li>
-        <li><a href="ha-long.html">Ha Long Tour</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nha-trang.html">Nha Trang</a></li>
+        <li><a href="sapa.html">Sa Pa</a></li>
+        <li><a href="ha-long.html">Ha Long</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main-content">
-    <h2>Welcome to Jurni Tours</h2>
-    <p>Explore Vietnam’s most stunning destinations with comfort and style.</p>
+  <main id="main">
+    <section class="intro" aria-labelledby="intro-title">
+      <h2 id="intro-title">Welcome to Jurni</h2>
+      <p>
+        Jurni is a demo site showcasing curated tours across Vietnam. Explore coastal beaches, mountain treks,
+        and UNESCO heritage sites through a responsive gallery. Resize your browser or change your system color
+        and motion preferences to see the site adapt.
+      </p>
+    </section>
 
-    <section class="grid">
-      <article>
-        <a href="nha-trang.html"><img src="img/NhaTrang.jpg" alt="Nha Trang beach"></a>
-        <h3>Nha Trang Tour</h3>
-        <p>3 days exploring Vinpearl, Hon Mun Island, and Dam Market.</p>
-      </article>
+    <section class="gallery" aria-label="Featured tours">
+      <figure>
+        <img src="img/NhaTrang1.jpg" alt="Nha Trang beach at sunrise">
+        <figcaption>Nha Trang — Sunrise Beach</figcaption>
+      </figure>
 
-      <article>
-        <a href="sapa.html"><img src="img/Sapa.jpg" alt="Sa Pa mountains"></a>
-        <h3>Sa Pa Tour</h3>
-        <p>Trek through Cat Cat Village and conquer Fansipan Peak.</p>
-      </article>
+      <figure>
+        <img src="img/Sapa1.jpg" alt="Terraced fields in Sa Pa">
+        <figcaption>Sa Pa — Terraced Fields</figcaption>
+      </figure>
 
-      <article>
-        <a href="ha-long.html"><img src="img/HaLong.jpg" alt="Ha Long Bay"></a>
-        <h3>Ha Long Tour</h3>
-        <p>Discover Ha Long Bay, Sung Sot Cave, and Titop Island.</p>
-      </article>
+      <figure>
+        <img src="img/HaLong1.jpg" alt="Ha Long Bay with limestone karsts">
+        <figcaption>Ha Long — Limestone Karsts</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/NhaTrang2.jpg" alt="Island tour near Nha Trang">
+        <figcaption>Nha Trang — Island Tour</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/Sapa2.jpg" alt="Fansipan panorama view">
+        <figcaption>Sa Pa — Fansipan View</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/HaLong2.jpg" alt="Sunset cruise on Ha Long Bay">
+        <figcaption>Ha Long — Sunset Cruise</figcaption>
+      </figure>
     </section>
   </main>
 
-  <footer>
-    Source: <a href="https://github.com/ledaithanhlong/coursera.git">LeDaiThanhLong</a>
-  </footer>
+  <footer>Contact: lucaslee050304@gmail.com</footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,46 +1,48 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Jurni — Interactive Photo Gallery</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery — Jurni</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to content</a>
+  <a href="#main" class="skip-link">Skip to main</a>
 
   <header>
     <div class="logo-title">
-      <img src="img/logo.png" alt="Jurni Logo">
-      <h1>Jurni — Interactive Photo Gallery</h1>
+      <img src="img/logo.png" alt="Jurni logo" />
+      <h1>Jurni — Gallery</h1>
     </div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="review.html">Reviews</a></li>
+        <li><a href="nha-trang.html">Nha Trang</a></li>
+        <li><a href="sapa.html">Sa Pa</a></li>
+        <li><a href="ha-long.html">Ha Long</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
-    <div class="preview-box" id="previewBox">
-      Hover or focus on an image to preview!
-    </div>
-
-    <div id="gallery">
-      <img src="img/NhaTrang1.jpg" alt="Nha Trang Beach at sunrise">
-      <img src="img/NhaTrang2.jpg" alt="Nha Trang island tour">
-      <img src="img/Sapa1.jpg" alt="Sapa terraced fields">
-      <img src="img/Sapa2.jpg" alt="Fansipan mountain view">
-      <img src="img/HaLong1.jpg" alt="Ha Long Bay limestone cliffs">
-      <img src="img/HaLong2.jpg" alt="Cruise on Ha Long Bay">
-    </div>
+    <section class="gallery" aria-label="All images">
+      <figure><img src="img/NhaTrang1.jpg" alt="Nha Trang 1"><figcaption>Nha Trang 1</figcaption></figure>
+      <figure><img src="img/NhaTrang2.jpg" alt="Nha Trang 2"><figcaption>Nha Trang 2</figcaption></figure>
+      <figure><img src="img/Sapa1.jpg" alt="Sapa 1"><figcaption>Sa Pa 1</figcaption></figure>
+      <figure><img src="img/Sapa2.jpg" alt="Sapa 2"><figcaption>Sa Pa 2</figcaption></figure>
+      <figure><img src="img/HaLong1.jpg" alt="Ha Long 1"><figcaption>Ha Long 1</figcaption></figure>
+      <figure><img src="img/HaLong2.jpg" alt="Ha Long 2"><figcaption>Ha Long 2</figcaption></figure>
+      <figure><img src="img/NhaTrang3.jpg" alt="Nha Trang 3"><figcaption>Beach</figcaption></figure>
+      <figure><img src="img/Sapa3.jpg" alt="Sapa 3"><figcaption>Terraces</figcaption></figure>
+      <figure><img src="img/HaLong3.jpg" alt="Ha Long 3"><figcaption>Cave</figcaption></figure>
+      <figure><img src="img/NhaTrang4.jpg" alt="Nha Trang 4"><figcaption>Market</figcaption></figure>
+      <figure><img src="img/Sapa4.jpg" alt="Sapa 4"><figcaption>Town</figcaption></figure>
+      <figure><img src="img/HaLong4.jpg" alt="Ha Long 4"><figcaption>Kayaking</figcaption></figure>
+    </section>
   </main>
 
-  <footer>
-    © 2025 Jurni. All rights reserved.
-  </footer>
+  <footer>Contact: lucaslee050304@gmail.com</footer>
 
   <script src="js/script.js"></script>
 </body>

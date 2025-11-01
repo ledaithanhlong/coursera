@@ -1,39 +1,36 @@
+// js/script.js
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("Jurni website loaded successfully!");
-
-  const previewBox = document.getElementById("previewBox");
-  const tourImages = document.querySelectorAll("#gallery img");
-
-  tourImages.forEach((img, index) => {
-    img.setAttribute("tabindex", index + 1);
-  });
-
-  window.addEventListener("load", () => {
-    console.log("Page fully loaded. Tabindex attributes applied.");
-  });
-
-  tourImages.forEach((img) => {
-    // Mouse hover
-    img.addEventListener("mouseenter", () => {
-      previewBox.style.backgroundImage = `url(${img.src})`;
-      previewBox.textContent = img.alt;
+  // Set active nav link based on current filename
+  try {
+    const path = window.location.pathname;
+    const file = path.substring(path.lastIndexOf("/") + 1) || "index.html";
+    const anchors = document.querySelectorAll("nav a");
+    anchors.forEach(a => {
+      const href = a.getAttribute("href");
+      if (href === file) a.classList.add("active");
     });
+  } catch (e) {
+    // silent
+  }
 
-    img.addEventListener("mouseleave", () => {
-      previewBox.style.backgroundImage = "";
-      previewBox.textContent = "Hover over an image to preview!";
+  // Make figures keyboard-focusable for accessibility
+  const figures = document.querySelectorAll(".gallery figure");
+  figures.forEach((fig, idx) => {
+    fig.setAttribute("tabindex", "0"); // allow focus
+    fig.addEventListener("focus", () => {
+      fig.classList.add("focused");
     });
-
-    img.addEventListener("focus", () => {
-      img.style.outline = "3px solid #0096c7";
-      previewBox.style.backgroundImage = `url(${img.src})`;
-      previewBox.textContent = img.alt;
+    fig.addEventListener("blur", () => {
+      fig.classList.remove("focused");
     });
-
-    img.addEventListener("blur", () => {
-      img.style.outline = "none";
-      previewBox.style.backgroundImage = "";
-      previewBox.textContent = "Use Tab to navigate the images!";
+    // Optional: pressing Enter opens image in new tab (useful for keyboard users)
+    fig.addEventListener("keydown", (ev) => {
+      if (ev.key === "Enter") {
+        const img = fig.querySelector("img");
+        if (img && img.src) {
+          window.open(img.src, "_blank");
+        }
+      }
     });
   });
 });
